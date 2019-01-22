@@ -104,7 +104,8 @@ public class BarcodeScanner {
     }
 
     private LuminanceSource getLuminanceSource(byte[] data, int width, int height) {
-        Rect rect = CameraViewManager.getFramingRectInPreview(width, height);
+        // Rect rect = CameraViewManager.getFramingRectInPreview(width, height);
+        Rect rect = new Rect(0, 0, width, height);
         try {
             return new RotateLuminanceSource(data, width, height, rect.left, rect.top,
                     rect.width(), rect.height(), false);

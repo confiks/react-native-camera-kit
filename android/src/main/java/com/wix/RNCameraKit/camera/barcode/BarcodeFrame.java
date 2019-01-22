@@ -63,8 +63,8 @@ public class BarcodeFrame extends View {
 
         frameRect.left = marginWidth;
         frameRect.right = width - marginWidth;
-        frameRect.top = marginHeight - 30;
-        frameRect.bottom = height - marginHeight - 30;
+        frameRect.top = marginHeight - 80;
+        frameRect.bottom = height - marginHeight - 80;
     }
 
     @Override
